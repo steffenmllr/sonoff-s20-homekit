@@ -40,7 +40,6 @@ EXTRA_CFLAGS += \
 
 ESPTOOL2 := $(shell which esptool2)
 OPENSSL := $(shell which openssl)
-DOCKER := $(shell which docker)
 
 HOMEKITSETTINGS = utils/generateHAPSettings.py
 
