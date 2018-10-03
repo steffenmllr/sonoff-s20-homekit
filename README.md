@@ -83,3 +83,6 @@ to your update server (using the path you have chosen at compilation time).
 You'll find the files in the firmware/ota directory. Copy ALL files to your webserver directory accessible via your chosen update server path.
 
 To initiate an OTA update of the device, just long-press the device button (4 secs and on) on an already flashed device.
+
+### Docker Setup
+Run `docker build -t sonoff-s20-homekit:latest .` and `docker run -it -v $(pwd)/qr:/sonoff-s20-homekit/qr sonoff-s20-homekit:latest bash`

@@ -10,7 +10,7 @@ EXTRA_COMPONENTS = \
 	$(abspath components/http-client-ota) \
 	$(abspath components/wifi-config) \
 	$(abspath components/wolfssl) \
-	$(abspath components/cJSON) \
+	$(abspath components/cjson) \
 	$(abspath components/homekit)
 
 FLASH_SIZE = 8
@@ -40,6 +40,7 @@ EXTRA_CFLAGS += \
 
 ESPTOOL2 := $(shell which esptool2)
 OPENSSL := $(shell which openssl)
+DOCKER := $(shell which docker)
 
 HOMEKITSETTINGS = utils/generateHAPSettings.py
 
